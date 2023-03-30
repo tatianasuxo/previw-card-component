@@ -1,0 +1,89 @@
+:root{
+    /*### Primay*/
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    
+    /*### Neutral*/
+    
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    
+    /*## Typography
+     ### Body Copy*/
+    
+    --Font-size-paragraph: 14px;
+    
+    
+    --font-family-MS: 'Montserrat', sans-serif;
+    
+    --font-family-FR: 'Fraunces', serif;
+    
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        background-color: var(--cream);
+    }
+    .product-container {
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 10px;
+        background-color: var(--white);
+        overflow: hidden;
+    }
+    .product-container img{
+        width: 100%;
+    }
+    .product-details{
+        width: 90%;
+        margin: 15px auto;
+    }
+    .product-details__category{
+        font: var(--font-family-FR);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--Dark-grayish-blue);
+        font-size: var(--Font-size-paragraph)
+    }
+    
+    .product-details h2{
+        font-family: var(--font-family-FR);
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .product-details p{
+        font-family: var(--font-family-MS);
+        color: var(--Dark-grayish-blue);
+        font-size: var(--Font-size-paragraph);
+        font-weight: 700;
+    }
+    .product-price{
+        display: flex;
+        align-items: center;
+        margin: 24px 0;
+    }
+    .product-price span:nth-child(1){
+        color: var(--dark-cyan);
+        font-family: var(--font-family-FR);
+        font-size: 32px;
+        margin: 0 20px 0 0;
+    }
+    .product-price span:nth-child(2){
+        color: var(--Dark-grayish-blue);
+        font-family: var(--font-family-FR);
+        font-size: var(--Font-size-paragraph);
+        text-decoration: line-through;
+    }
+    .product-details button{
+        width: 100%;
+        height: 3rem;
+        border-radius: 10px;
+        border: transparent;
+        background-color: var(--dark-cyan);
+        font-family: var(--font-family-MS);
+        font-weight: 700;
+        color: var(--White);
+        
+    }
